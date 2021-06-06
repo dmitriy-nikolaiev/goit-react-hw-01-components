@@ -1,0 +1,42 @@
+.item {
+  background: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 2px 2px 9px 1px rgba(59, 58, 58, 0.3);
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .status {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fa5351;
+
+    &.is-online {
+      background-color: #44b048;
+    }
+  }
+  .avatar {
+    width: 96px;
+    border-radius: 10%;
+    margin-left: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.1) 50%
+    );
+  }
+
+  .name {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
